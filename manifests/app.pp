@@ -9,8 +9,8 @@ node "node-3" {
     service_state => running,
 
     }
-    #include base
-    include ntp
+    include base
+    #include ntp
 }
 
 node default {
