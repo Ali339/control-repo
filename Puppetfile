@@ -5,6 +5,7 @@ forge 'https://forge.puppet.com'
  mod 'puppetlabs/haproxy'
  mod 'puppetlabs/concat'
  mod 'puppetlabs/stdlib'
+ mod 'puppetlabs/ntp'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

@@ -1,4 +1,4 @@
-node "node-1" {
+node "node-3" {
 
     class {'tomcat':
     user          => 'tomcat',
@@ -10,20 +10,7 @@ node "node-1" {
 
     }
     include base
-}
-node "node-2" {
-    class {'tomcat':
-    user          => 'tomcat',
-    group         => 'tomcat',
-    config_path   => '/etc/tomcat/tomcat.conf',
-    packages      => [ 'tomcat', 'tomcat-webapps' ],
-    service_name  => 'tomcat',
-    service_state => running,
-    xms => "54m",
-    xmx => "80m"
-
-    }
-    include base
+    include ntp
 }
 
 node default {
