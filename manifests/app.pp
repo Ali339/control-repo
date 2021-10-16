@@ -9,7 +9,7 @@ node "node-3" {
     service_state => running,
 
     }
-    include base
+#    include base
     include ntp
 }
 
