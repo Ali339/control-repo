@@ -9,7 +9,7 @@ node "node-1" {
     service_state => running,
 
     }
-   # include base
+    include base
 }
 node "node-2" {
     class {'tomcat':
@@ -23,7 +23,7 @@ node "node-2" {
     xmx => "80m"
 
     }
-    #include base
+    include base
 }
 
 node default {

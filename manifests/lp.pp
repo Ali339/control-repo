@@ -20,5 +20,5 @@ node 'node-4' {
     ports             => '8080',
     options           => 'check',
   }
-#include base
+include base
   }
