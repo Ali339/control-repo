@@ -10,7 +10,7 @@ node "node-3" {
 
     }
     #include base
-    include ntp
+    #include ntp
 }
 
 node default {
